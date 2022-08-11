@@ -1,7 +1,6 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
+@import "variables/colores";
+@import "generales";
+
 
 #logo_nav{
     height: 70px;
@@ -23,7 +22,7 @@ h2{
     justify-content: space-around;
     align-items: center;
     height: 150px;
-    background-color: rgb(137, 172, 207);
+    background-color: $color_secundario;
 }
 
 .imagenes_partners{
@@ -45,7 +44,7 @@ footer{
 }
 
 .fondo_products{
-    background-color: rgb(137, 172, 207);
+    background-color: $color_secundario;
     display: flex;
     align-items: center;
 }
