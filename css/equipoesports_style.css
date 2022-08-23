@@ -28,8 +28,8 @@ h2 {
 footer {
   margin-top: 40px; }
 
-#header_store {
-  margin-top: 90px;
+.titulo, .titulo--store, #contenedor_grande_aboutus #tarjeta_texto_aboutus .titulo--about_us {
+  margin-top: 80px;
   margin-left: 20px; }
 
 .subtext_store {
@@ -40,6 +40,32 @@ footer {
   display: flex;
   align-items: center; }
 
+.titulo--store {
+  text-align: left; }
+
+#contenedor_grande_aboutus {
+  background-color: #89accf;
+  height: 400px;
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-around; }
+  #contenedor_grande_aboutus #tarjeta_texto_aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    #contenedor_grande_aboutus #tarjeta_texto_aboutus .titulo--about_us {
+      text-align: center; }
+    #contenedor_grande_aboutus #tarjeta_texto_aboutus #descripcion_monke {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 22px;
+      font-weight: 50;
+      text-align: center;
+      padding: 0px 20px 0px 20px; }
+  #contenedor_grande_aboutus #imagen_aboutus {
+    width: 80%;
+    height: 100%; }
+
 @media screen and (max-width: 600px) {
   #div_imagenes_partners {
     flex-wrap: wrap;
@@ -48,4 +74,16 @@ footer {
     width: 30%;
     height: 40%; }
   #footer_text {
-    font-size: smaller; } }
+    font-size: smaller; }
+  #contenedor_grande_aboutus {
+    margin-top: 70px; }
+    #contenedor_grande_aboutus #tarjeta_texto_aboutus {
+      align-items: center; }
+      #contenedor_grande_aboutus #tarjeta_texto_aboutus .titulo--about_us {
+        font-size: 30px;
+        margin-top: 0px; }
+      #contenedor_grande_aboutus #tarjeta_texto_aboutus #descripcion_monke {
+        font-size: 12px; }
+    #contenedor_grande_aboutus #imagen_aboutus {
+      width: 60%;
+      height: 100%; } }

@@ -1,6 +1,6 @@
 @import "variables/colores";
 @import "generales";
-
+@import "variables/tipografias";
 
 #logo_nav{
     height: 70px;
@@ -34,8 +34,8 @@ footer{
     margin-top: 40px;
 }
 
-#header_store{
-    margin-top: 90px;
+.titulo{
+    margin-top: 80px;
     margin-left: 20px;
 }
 
@@ -47,6 +47,47 @@ footer{
     background-color: $color_secundario;
     display: flex;
     align-items: center;
+}
+
+.titulo--store{
+    @extend .titulo;
+    text-align: left;
+}
+
+
+
+#contenedor_grande_aboutus{
+    background-color: $color_secundario;
+    height: 400px;
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-around;
+
+    #tarjeta_texto_aboutus{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .titulo--about_us{
+            @extend .titulo;
+            text-align: center;
+        }
+
+        #descripcion_monke{
+            font-family: $font_parrafos;
+            font-size: 22px;
+            font-weight: 50;
+            text-align: center;
+            padding: 0px 20px 0px 20px;
+        }
+
+    }
+
+    #imagen_aboutus{
+        width: 80%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -62,6 +103,29 @@ footer{
 
     #footer_text{
         font-size: smaller;
+    }
+
+    #contenedor_grande_aboutus{
+        margin-top: 70px;
+    
+        #tarjeta_texto_aboutus{
+            align-items: center;
+    
+            .titulo--about_us{
+                font-size: 30px;
+                margin-top: 0px;
+            }
+    
+            #descripcion_monke{
+                font-size: 12px;
+            }
+    
+        }
+    
+        #imagen_aboutus{
+            width: 60%;
+            height: 100%;
+        }
     }
 }
 
