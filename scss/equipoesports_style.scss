@@ -144,6 +144,28 @@ footer{
         }
     }
 
+    #grilla_news{
+        height: 700px;
+        width: 100%;
+        margin-top: 85px;
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
+        column-gap: 10%;
+        row-gap: 10%;
+        .tarjeta_news{
+            background-color: $color_secundario;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            .img_news{
+                height: 75%;
+                width: 90%
+            }
+        }
+    }
+
 @media screen and (max-width: 600px) {
     #div_imagenes_partners{
         flex-wrap: wrap;
@@ -208,6 +230,11 @@ footer{
             .bi-youtube{
                 font-size: 30px;
             }
+        }
+
+        #grilla_news{
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
         }
 }
 
