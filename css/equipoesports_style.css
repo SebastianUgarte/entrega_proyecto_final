@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 * {
   margin: 0px;
   padding: 0px; }
@@ -28,7 +29,7 @@ h2 {
 footer {
   margin-top: 40px; }
 
-.titulo, .titulo--store, #contenedor_grande_aboutus #tarjeta_texto_aboutus .titulo--about_us {
+.titulo, .titulo--store, #contenedor_grande_aboutus #tarjeta_texto_aboutus .titulo--about_us, #div_mapa_info #div_info_cu .titulo-contactus {
   margin-top: 80px;
   margin-left: 20px; }
 
@@ -66,6 +67,46 @@ footer {
     width: 80%;
     height: 100%; }
 
+#div_mapa_info {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 500px; }
+  #div_mapa_info #div_info_cu {
+    display: flex;
+    flex-direction: column;
+    background-color: #89accf;
+    width: 40%;
+    justify-content: space-around; }
+    #div_mapa_info #div_info_cu .titulo-contactus {
+      text-align: left; }
+    #div_mapa_info #div_info_cu #lista_datos {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      #div_mapa_info #div_info_cu #lista_datos .datos_contactus {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px; }
+  #div_mapa_info #div_mapa {
+    width: 60%; }
+    #div_mapa_info #div_mapa #mapa {
+      width: 100%;
+      height: 500px; }
+
+#iconos {
+  display: flex;
+  justify-content: space-around; }
+  #iconos .bi-whatsapp {
+    font-size: 50px;
+    color: #0bb50b; }
+  #iconos .bi-messenger {
+    font-size: 50px;
+    color: #10a4d5; }
+  #iconos .bi-youtube {
+    font-size: 50px;
+    color: #fa0000; }
+
 @media screen and (max-width: 600px) {
   #div_imagenes_partners {
     flex-wrap: wrap;
@@ -86,4 +127,16 @@ footer {
         font-size: 12px; }
     #contenedor_grande_aboutus #imagen_aboutus {
       width: 60%;
-      height: 100%; } }
+      height: 100%; }
+  #div_mapa_info {
+    height: 300px; }
+    #div_mapa_info #div_info_cu #lista_datos .datos_contactus {
+      font-size: 10px; }
+    #div_mapa_info #div_mapa #mapa {
+      height: 300px; }
+  #iconos .bi-whatsapp {
+    font-size: 30px; }
+  #iconos .bi-messenger {
+    font-size: 30px; }
+  #iconos .bi-youtube {
+    font-size: 30px; } }

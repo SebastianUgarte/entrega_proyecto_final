@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
 @import "variables/colores";
 @import "generales";
 @import "variables/tipografias";
@@ -90,6 +92,58 @@ footer{
     }
 }
 
+#div_mapa_info{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 500px;
+    #div_info_cu{
+        display: flex;
+        flex-direction: column;
+        background-color: $color_secundario;
+        width: 40%;
+        justify-content: space-around;
+        .titulo-contactus{
+            @extend .titulo;
+            text-align: left;
+        }
+        #lista_datos{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .datos_contactus{
+                font-family: $font_parrafos;
+                font-size: 15px;
+            }
+        }
+    }
+    #div_mapa{
+        width: 60%;
+        #mapa{
+            width: 100%;
+            height: 500px;
+        }
+    }   
+    }
+
+  #iconos{
+    display:flex;
+    justify-content: space-around;
+        .bi-whatsapp{
+            font-size: 50px;
+            color: rgb(11, 181, 11);
+        }
+        .bi-messenger{
+            font-size: 50px;
+            color: rgb(16, 164, 213);
+        }
+        .bi-youtube{
+            font-size: 50px;
+            color: rgb(250, 0, 0);
+        }
+    }
+
 @media screen and (max-width: 600px) {
     #div_imagenes_partners{
         flex-wrap: wrap;
@@ -127,5 +181,33 @@ footer{
             height: 100%;
         }
     }
+
+    #div_mapa_info{
+        height: 300px;
+        #div_info_cu{
+            #lista_datos{
+                .datos_contactus{
+                    font-size: 10px;
+                }
+            }
+        }
+        #div_mapa{
+            #mapa{
+                height: 300px;
+            }
+        }   
+        }
+    
+      #iconos{
+            .bi-whatsapp{
+                font-size: 30px;
+            }
+            .bi-messenger{
+                font-size: 30px;
+            }
+            .bi-youtube{
+                font-size: 30px;
+            }
+        }
 }
 
