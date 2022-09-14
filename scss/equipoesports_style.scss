@@ -49,6 +49,9 @@ footer{
     background-color: $color_secundario;
     display: flex;
     align-items: center;
+    .img_products:hover{
+        transform: scale(1.2, 1.2);
+    }
 }
 
 .titulo--store{
@@ -162,6 +165,9 @@ footer{
             .img_news{
                 height: 75%;
                 width: 90%
+            }
+            .texto_news:hover{
+                transform: scale(1.2 , 1.2);
             }
         }
     }

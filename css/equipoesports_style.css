@@ -40,6 +40,8 @@ footer {
   background-color: #89accf;
   display: flex;
   align-items: center; }
+  .fondo_products .img_products:hover {
+    transform: scale(1.2, 1.2); }
 
 .titulo--store {
   text-align: left; }
@@ -125,6 +127,8 @@ footer {
     #grilla_news .tarjeta_news .img_news {
       height: 75%;
       width: 90%; }
+    #grilla_news .tarjeta_news .texto_news:hover {
+      transform: scale(1.2, 1.2); }
 
 @media screen and (max-width: 600px) {
   #div_imagenes_partners {
